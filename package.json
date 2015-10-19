@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-template-string-processing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Babel plugin to process template string with any configured transformer",
   "main": "lib/index.js",
   "repository": "MunGell/babel-plugin-template-string-processing",
