@@ -29,7 +29,7 @@ export default function ({ Plugin, types: t }) {
         let stringStart = quasis.length > 0 ? String(quasis[0].value.cooked) : '';
 
         return options.filter((option) => {
-            return stringStart.startsWith('~' + option.type);
+            return stringStart.indexOf('~' + option.type) === 0;
         });
     };
 
