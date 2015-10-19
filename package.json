@@ -2,7 +2,7 @@
   "name": "babel-plugin-template-string-processing",
   "version": "0.0.1",
   "description": "Babel plugin to process template string with any configured transformer",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "MunGell/babel-plugin-template-string-processing",
   "engines": {
     "node": ">=0.12"
@@ -11,11 +11,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel-plugin build",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
     "babel",
     "plugin",
+    "babel-plugin",
     "template string"
   ],
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
