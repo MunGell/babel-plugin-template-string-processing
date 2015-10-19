@@ -11,7 +11,7 @@
     "test": "test"
   },
   "scripts": {
-    "clean": "rimraf lib",
+    "clean": "rm -rf lib",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel-plugin build",
     "prepublish": "npm run clean && npm run build"
